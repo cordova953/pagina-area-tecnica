@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Técnico en Informática 2024</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        .left-container, .right-container {
+            position: absolute;
+            top: 10px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .left-container {
+            left: 10px;
+        }
+
+        .right-container {
+            right: 10px;
+        }
+
+        .left-container img, .right-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .left-container h5, .right-container h5 {
+            color: white;
+            margin: 5px 0 0;
+        }
+
+        .titulo-animado {
+            margin-top: 120px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .titulo-animado span {
+            display: inline-block;
+            margin: 0 1px;
+        }
+
+        hr {
+            border: none;
+            height: 8px;
+        }
+
+        nav {
+            margin: 40px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav > ul > li {
+            display: inline-block;
+            position: relative;
+            margin: 0 10px;
+        }
+
+        nav li a {
+            display: block;
+            padding: 12px 20px;
+            background-color: #eee;
+            color: #333;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        nav li a:hover {
+            background-color: #ccc;
+        }
+
+        /* Submenús generales */
+        nav li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            border-radius: 4px;
+            z-index: 999;
+            min-width: 180px;
+            padding: 0;
+        }
+
+        nav li:hover > ul {
+            display: block;
+        }
+
+        nav li ul li {
+            display: block;
+        }
+
+        /* Submenú 1: Diseño y Desarrollo Web */
+        nav ul > li:nth-child(2) ul {
+            background-color: #d4edda; /* verde claro */
+        }
+        nav ul > li:nth-child(2) ul li a {
+            color: #2f4f4f;
+        }
+        nav ul > li:nth-child(2) ul li a:hover {
+            background-color: #a2d5a5;
+            color: #000;
+        }
+
+        /* Submenú 2: Programación y Base de Datos */
+        nav ul > li:nth-child(3) ul {
+            background-color: #d0e7ff; /* azul claro */
+        }
+        nav ul > li:nth-child(3) ul li a {
+            color: #ffffff;
+        }
+        nav ul > li:nth-child(3) ul li a:hover {
+            background-color: #7fbfff;
+            color: #000;
+        }
+
+        /* Submenú 3: Sistemas Operativos */
+        nav ul > li:nth-child(4) ul {
+            background-color: #fff9c4; /* amarillo claro */
+        }
+        nav ul > li:nth-child(4) ul li a {
+            color: #333333;
+        }
+        nav ul > li:nth-child(4) ul li a:hover {
+            background-color: #ffeb3b;
+            color: #000;
+        }
+
+        /* Submenú 4: Soporte Técnico */
+        nav ul > li:nth-child(5) ul {
+            background-color: #e1bee7; /* violeta claro */
+        }
+        nav ul > li:nth-child(5) ul li a {
+            color: #ffffff;
+        }
+        nav ul > li:nth-child(5) ul li a:hover {
+            background-color: #ce93d8;
+            color: #000;
+        }
+
+        .contenido {
+            padding: 40px;
+            text-align: justify;
+            color: black;
+            font-size: 18px;
+        }
+
+        .contenido img {
+            float: right;
+            width: 20%;
+            height: auto;
+            margin-left: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor izquierdo -->
+    <div class="left-container">
+        <img src="nico.jpg" alt="jossue">
+        <h5>jossue</h5>
+    </div>
+
+    <!-- Contenedor derecho -->
+    <div class="right-container">
+        <img src="nico.gif" alt="cordova">
+        <h5>cordova</h5>
+    </div>
+
+    <!-- Título animado -->
+    <div class="titulo-animado">
+        <marquee>
+            <span style="color:#98FF98">P</span><span style="color:#FDCB6E">R</span><span style="color:#A4D9D6">O</span>
+            <span style="color:#F8CEEC">Y</span><span style="color:#B0E0E6">E</span><span style="color:#E6E6FA">C</span>
+            <span style="color:#FFDAB9">T</span><span style="color:#FFFACD">O</span><span style="color:#F0F8FF">D</span>
+            <span style="color:#C5E1A5">E</span><span style="color:#E0B0FF">L</span><span style="color:#7FFFD4">A</span>
+            <span style="color:#FFDAB9">R</span><span style="color:#A3FFAC">E</span><span style="color:#FFCA99">A</span>
+            <span style="color:#EAFFC2">T</span><span style="color:#FF8097">E</span><span style="color:#FF85D5">C</span>
+            <span style="color:#E79EFF">N</span><span style="color:#B8E4FF">I</span><span style="color:#FF94A2">C</span>
+            <span style="color:#FFE180">A</span><span style="color:#F7CAC9">I</span><span style="color:#F8EDEB">N</span>
+            <span style="color:#FFE5B4">F</span><span style="color:#C5E0DC">O</span><span style="color:#A2C8CC">R</span>
+            <span style="color:#FFD1DC">M</span><span style="color:#FFB7C5">A</span><span style="color:#FFC0CB">T</span>
+            <span style="color:#F6A5C0">I</span><span style="color:#F9B7FF">C</span><span style="color:#FFCBA4">A</span>
+            <span style="color:#FDD7E4">2 </span><span style="color:#FFB7C3">0</span><span style="color:#FFE4E1">2</span>
+            <span style="color:#FFDAB9">5</span><span style="color:#F0D8D9">2</span><span style="color:#E6E6FA">0</span>
+            <span style="color:#D3D3D3">2</span><span style="color:#FFC0CB">6</span>
+        </marquee>
+    </div>
+
+    <hr style="background-color: yellow;">
+
+    <!-- Menú principal -->
+    <nav>
+        <ul>
+            <li><a href="pagnew.html">Inicio</a></li>
+            <li>
+                <a href="#">Diseño y Desarrollo Web</a>
+                <ul>
+                    <li><a href="file:///C:/Users/USER1/Desktop/Dise%C3%B1o%20web%20proyecto%20cordova/github%20(2).html">Trimestre 1</a></li>
+                    <li><a href="file:///C:/Users/USER1/Desktop/Dise%C3%B1o%20web%20proyecto%20cordova/hosting.html">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Programación y Base de Datos</a>
+                <ul>
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Sistemas Operativos</a>
+                <ul>
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Soporte Técnico</a>
+                <ul>
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <hr style="background-color: black;">
+
+    <!-- Contenido descriptivo -->
+    <div class="contenido">
+        <img src="comput.gif" alt="Computadora animada">
+        Este proyecto forma parte del área técnica de informática, desarrollando competencias clave en diseño web, programación, soporte técnico, y sistemas operativos. Representa el trabajo realizado durante todo el ciclo lectivo 2024-2025, con contenidos distribuidos por trimestres. Cada sección del menú incluye los recursos y actividades desarrolladas por los estudiantes.
+    </div>
+
+    <footer>
+        © 2024 Proyecto Técnico en Informática - Todos los derechos reservados
+    </footer>
+
+</body>
+</html>
